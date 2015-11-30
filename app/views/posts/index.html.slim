@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+  body
+    = render 'layouts/top_bar'
+
+
+    .row
+      .small-12.columns
+        h3.subheader News
+
+    - @posts.reverse_each do |post|
+
+       = render 'posts/post_container', post:post

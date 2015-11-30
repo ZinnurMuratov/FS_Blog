@@ -1,0 +1,174 @@
+.callout {
+  margin: 0 0 1rem;
+  padding: 1rem;
+  position: relative;
+  background-color: #fff;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+  text-rendering: optimizeLegibility;
+}
+
+.callout>:first-child {
+  margin-top: 0;
+}
+
+.callout>:last-child {
+  margin-bottom: 0;
+}
+
+.callout.primary {
+  background-color: #CCCCCC;
+}
+
+.callout.primary a {
+  color: #116ca8;
+}
+
+.callout.primary a:hover {
+  color: #0a4063;
+}
+
+.callout.secondary {
+  background-color: #ebebeb;
+}
+
+.callout.success {
+  background-color: #e1faea;
+}
+
+.callout.success a {
+  color: #1ea450;
+}
+
+.callout.success a:hover {
+  color: #126330;
+}
+
+.callout.alert {
+  background-color: #fce6e2;
+}
+
+.callout.alert a {
+  color: #bf2b13;
+}
+
+.callout.alert a:hover {
+  color: #791b0c;
+}
+
+.callout.warning {
+  background-color: #fff3d9;
+}
+
+.callout.warning a {
+  color: #b37a00;
+}
+
+.callout.warning a:hover {
+  color: #664600;
+}
+
+.callout.small {
+  padding: .5rem;
+}
+
+.callout.large {
+  padding: 3rem;
+}
+
+.close-button {
+  position: absolute;
+  color: #8a8a8a;
+  right: 1rem;
+  top: .5rem;
+  font-size: 2em;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.post {
+  box-shadow: 0 2px 0 rgba(204,204,204,.15);
+  margin-bottom: 1.3rem;
+  margin-top: 1.3rem;
+  border: 1px solid #eee;
+
+
+  .content {
+    position: relative;
+    background: #fff;
+    padding: 0 0.75rem 0.75rem;
+
+    h2 {
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: #696969;
+      margin: 0;
+      padding: 5px 0;
+
+      a {
+        color: #696969;
+      }
+    }
+
+    p {
+      font-size: 0.9rem;;
+      color: #aaaaaa;
+      margin: 0 0 5px;
+      padding: 0;
+    }
+
+    .verified {
+      &:before {
+        content: '\e60c';
+        font-family: icomoon;
+        width: 1.3rem;
+        height: 1.3rem;
+        border-radius: 50%;
+        display: inline-block;
+        margin-left: 0.875rem;
+        background: #43AC6A;
+        color: #fff;
+        box-sizing: border-box;
+        padding: .15em;
+      }
+    }
+
+    .share {
+      position: absolute;
+      top: 0.75rem;
+      right: 0.75rem;
+      font-size: 0.875rem;
+      color: #aaaaaa;
+      line-height: 14px;
+      [class*="icon-"] {
+        font-size: 1rem;
+
+        @media only screen and (max-width: 40em) {
+          position: relative;
+          top: -2rem;
+          color: #fff;
+          font-weight: 900;
+          text-shadow: 2px 2px #333;
+        }
+      }
+
+      .count {
+        line-height: 14px;
+        display: inline-block;
+        position: relative;
+        top: -3px;
+        margin: 0 5px;
+
+        @media only screen and (max-width: 40em) {
+          position: relative;
+          top: -2.2rem;
+          color: #fff;
+          font-weight: 500;
+          text-shadow: 2px 2px #333;
+        }
+      }
+    }
+  }
+}
+

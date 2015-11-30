@@ -1,0 +1,10 @@
+
+  .row
+    .small-12.columns
+      article.post
+
+        .content
+          h2 = link_to post.posttitle, post_path(post)
+          p = post.postbody
+          p  comments: #{post.comments.count}
+          p = post.created_at

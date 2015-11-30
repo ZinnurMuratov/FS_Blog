@@ -1,0 +1,24 @@
+= render 'layouts/top_bar'
+.row
+  .small-12.columns
+    article.post
+
+      .content
+        h2 = link_to @post.posttitle, post_path(@post)
+        p
+          = @post.postbody
+        p = @post.created_at
+
+
+        = link_to 'Edit ', edit_post_path(@post)
+        = link_to "Delete ", post_path(@post), method: :delete
+
+        br
+        br
+        h3 Comments
+
+        .comments
+          -  @post.comments.each do |comment|
+            = render 'comments/comment', comment: comment
+      = render 'comments/form'
+
