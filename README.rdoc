@@ -1,7 +1,7 @@
 == README
 
 FS homework
-by Zinnur Muratov
+*by Zinnur Muratov
 
 Done:
 
@@ -9,7 +9,10 @@ Done:
 
     * Devise
 
-ToDo:
-    * Ajax (issue: on render partial ->  500 error)
+    * Slim
 
-it 
+    * Zurb Foundation
+
+ToDo:
+
+    * Ajax (issue: on render partial ->  500 error)
