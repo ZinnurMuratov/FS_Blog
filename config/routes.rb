@@ -1,8 +1,14 @@
 Rails.application.routes.draw do
 
+  devise_for :users
+  root 'posts#index'
+
+  get 'posts/index', as: 'user_root'
+
   resources :posts do
     resources :comments, shallow:true
   end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
