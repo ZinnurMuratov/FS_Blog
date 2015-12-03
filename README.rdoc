@@ -13,6 +13,7 @@ Done:
 
     * Zurb Foundation
 
-ToDo:
+    * Ajax
 
-    * Ajax (issue: on render partial ->  500 error)
+ToDo
+    * Search 

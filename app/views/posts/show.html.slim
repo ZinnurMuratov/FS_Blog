@@ -5,8 +5,7 @@
 
       .content
         h2 = link_to @post.posttitle, post_path(@post)
-        p
-          = @post.postbody
+        h3  = @post.postbody
         p = @post.created_at
 
         - if user_signed_in?

@@ -2,5 +2,6 @@
  * Created by biosinc on 29.11.15.
  */
 
-$(".comments").html("<%= render 'layouts/test'%>")
+$(".comments").append("<%= j render 'comments/comment', comment:@comment%>")
 
+$('#comment_commentbody').val("");
